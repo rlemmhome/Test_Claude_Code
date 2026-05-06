@@ -24,11 +24,11 @@ public class Book {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Book book)) return false;
-        return isbn.equals(book.isbn);
+        return isbn.equals(book.isbn) && title.equals(book.title);
     }
 
     @Override
     public int hashCode() {
-        return isbn.hashCode();
+        return 31 * isbn.hashCode() + title.hashCode();
     }
 }
