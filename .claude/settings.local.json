@@ -2,14 +2,10 @@
   "permissions": {
     "allow": [
       "Bash(mkdir -p out)",
-      "Bash(javac --enable-preview --release 25 -d out src/Main.java)",
-      "Bash(java --enable-preview -cp out Main)",
-      "Bash(java -version)",
-      "Bash(javac -version)",
-      "Bash(javac --enable-preview --release 21 -d out src/Main.java)",
-      "Bash(javac --enable-preview --release 21 -d out /home/bob/IdeaProjects/Test_Claude_Code/src/Main.java)",
+      "Bash(/home/bob/.jdks/temurin-25.0.2/bin/javac --enable-preview --release 25 -d out src/*.java)",
+      "Bash(/home/bob/.jdks/temurin-25.0.2/bin/java --enable-preview -cp out Main)",
       "Bash(git *)",
-      "Bash(gh auth *)",
+      "Bash(gh *)",
       "Bash(sudo pacman *)"
     ]
   }
