@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p out)",
+      "Bash(javac --enable-preview --release 25 -d out src/Main.java)",
+      "Bash(java --enable-preview -cp out Main)",
+      "Bash(java -version)",
+      "Bash(javac -version)",
+      "Bash(javac --enable-preview --release 21 -d out src/Main.java)",
+      "Bash(javac --enable-preview --release 21 -d out /home/bob/IdeaProjects/Claude_Code_test/src/Main.java)",
+      "Bash(git *)",
+      "Bash(gh auth *)",
+      "Bash(sudo pacman *)"
+    ]
+  }
+}
