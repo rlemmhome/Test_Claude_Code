@@ -12,6 +12,7 @@ public class Book {
     }
 
     public static Book of(String title, String author, String isbn, int year) {
+        if (isbn == null) throw new NullPointerException("isbn must not be null");
         return new Book(title, author, isbn, year);
     }
 
