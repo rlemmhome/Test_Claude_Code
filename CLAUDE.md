@@ -10,18 +10,18 @@ A minimal Java 25 project managed by IntelliJ IDEA (no build tool — no Maven o
 
 Compile from the project root:
 ```
-javac -d out src/Main.java
+javac --enable-preview --release 21 -d out src/Main.java
 ```
 
 Run:
 ```
-java -cp out Main
+java --enable-preview -cp out Main
 ```
 
 Or use IntelliJ's Run/Debug actions directly.
 
 ## Language Features
 
-The project targets **JDK 25 (Temurin)** and uses the unnamed class / instance main method preview feature introduced in Java 21+:
+The project targets **JDK 25 (Temurin)** but the system has **JDK 21 (Temurin)** installed. Uses the unnamed class / instance main method preview feature:
 - Entry point is `void main()` (no `public static`, no `String[] args`)
-- `IO.println()` is available in unnamed classes without imports
+- Use `System.out.println()` — `IO.println()` requires Java 23+
