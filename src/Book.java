@@ -16,6 +16,11 @@ public class Book {
         return new Book(title, author, isbn, year);
     }
 
+    public String title()  { return title; }
+    public String author() { return author; }
+    public String isbn()   { return isbn; }
+    public int    year()   { return year; }
+
     @Override
     public String toString() {
         return String.format("Book{title='%s', author='%s', isbn='%s', year=%d}", title, author, isbn, year);
